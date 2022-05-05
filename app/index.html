@@ -1,23 +1,61 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cum, cumque delectus dolorum eligendi, excepturi
-  illo ipsam nobis, odit quibusdam repellat saepe sapiente sint tempora vel veniam vitae! Possimus, vel!
-</div>
-<div>Ab accusamus alias dolorem earum eligendi est illum officiis praesentium, qui quos, reprehenderit rerum sapiente,
-  sequi vero voluptatibus. Autem eveniet id ipsum natus odio, omnis perferendis repudiandae soluta. Accusamus, possimus.
-</div>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo" href="#">
+                <img class="logo__img" src="images/logo.png" alt="logo">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link menu__list-link--active" href="#">home</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">shop</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">page</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">blog</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-nav">
+                <a class="user-nav__link" href="#">
+                    <img class="user-nav__link" src="images/icons/user.png" alt="user icon">
+                </a>
+                <a class="user-nav__link" href="#">
+                    <img class="user-nav__link" src="images/icons/search.png" alt="search icon">
+                </a>
+                <a class="user-nav__link" href="#">
+                    <img class="user-nav__link" src="images/icons/heart.png" alt="heart icon">
+                    <span class="user-nav__num">3</span>
+                </a>
+                <a class="user-nav__link" href="#">
+                    <img class="user-nav__link" src="images/icons/cart.png" alt="cart icon">
+                    <span class="user-nav__num">7</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
 
-  
+
 <script src="js/main.min.js"></script>
 </body>
 </html>
