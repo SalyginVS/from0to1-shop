@@ -34,7 +34,7 @@ const scripts = () => {
   return src([
       'node_modules/jquery/dist/jquery.js',
       'node_modules/slick-carousel/slick/slick.js',
-      'app/js/**/*.js'])
+      'app/js-dev/**/*.js'])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('./app/js/'))
