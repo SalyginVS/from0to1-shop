@@ -34,10 +34,10 @@ const scripts = () => {
   return src([
       'node_modules/jquery/dist/jquery.js',
       'node_modules/slick-carousel/slick/slick.js',
-      'app/js-dev/**/*.js'])
+      'app/js-dev/main.js'])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
-    .pipe(dest('./app/s-dev/js/'))
+    .pipe(dest('./app/js'))
     .pipe(browserSync.stream())
 }
 
