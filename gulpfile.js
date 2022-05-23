@@ -52,16 +52,17 @@ const images = () => {
         ]
       })
     ]))
-    .pipe(dest('dist/images'))
+    .pipe(dest('./dist/images/'))
 }
 
 const build = () => {
   return src([
-    'app/**/*.html',
-    'app/css/style.min.css',
-    'app/js/main.min.js'
-  ], { base: './app' })
-    .pipe(dest('dist'))
+    './app/**/*.html',
+    './app/css/style.min.css',
+    './app/js/main.min.js',
+    './app/fonts/**/*'
+  ], { base: './app/' })
+    .pipe(dest('./dist/'))
 }
 
 const cleanDist = () => {
